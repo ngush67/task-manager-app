@@ -10,8 +10,8 @@ A full-stack Task Manager application designed to help users organize, track, an
 - 📝 **Mark Tasks as Complete/Incomplete**
 - 🔍 **Filter Tasks (All, Completed, Incomplete)**
 - 🎨 **Responsive UI with Tailwind CSS**
-- ⚙️ **Backend API with Node.js and Express**
-- 💾 **Database Integration with MongoDB**
+- ⚙️ **Backend API with Node.js, Express, and MongoDB**
+- 🔐 **Environment Variables for Secure Configurations**
 
 ---
 
@@ -19,18 +19,23 @@ A full-stack Task Manager application designed to help users organize, track, an
 
 ```
 Task-Manager-App/
-├── models/              # Mongoose schemas for tasks
-├── public/              # Frontend static files (HTML, CSS, JS)
-├── routes/              # API routes for tasks
-├── src/                 # Frontend source files
-├── .gitignore           # Git ignore file
-├── README.md            # Project documentation
-├── package.json         # Project metadata and dependencies
-├── package-lock.json    # Dependency tree
-├── server.js            # Entry point for the backend server
-├── postcss.config.js    # PostCSS configuration
-├── tailwind.config.js   # Tailwind CSS configuration
-└── nohup.out            # Log file for background processes
+├── client/               # Frontend
+│   ├── public/           # Static files
+│   └── src/              # Components, styles, JS logic
+├── server/               # Backend
+│   ├── controllers/      # Business logic
+│   ├── models/           # Mongoose schemas
+│   ├── routes/           # API routes
+│   ├── config/           # Database connection
+│   └── server.js         # Backend entry point
+├── logs/                 # Log files
+├── .env                  # Environment variables
+├── .gitignore
+├── README.md
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── nohup.out
 ```
 
 ---
@@ -38,8 +43,8 @@ Task-Manager-App/
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, Tailwind CSS, JavaScript  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB (with Mongoose)  
+- **Backend:** Node.js, Express.js, MongoDB (Mongoose)  
+- **Tools:** PostCSS, dotenv, CORS
 
 ---
 
@@ -83,6 +88,7 @@ Task-Manager-App/
 - 📅 **Calendar View Integration**  
 - 📱 **Mobile App Version**  
 - 🔒 **User Authentication and Authorization**  
+- 🌐 **Deployment on Heroku or Vercel**
 
 ---
 
